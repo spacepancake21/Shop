@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.wrapper {
+	outline: 1px solid red;
+	min-height: 200px;
+	margin: 0 auto;
+	min-width: 1000px;
+}
+
+body {
+	color: #5c7b98;
+	font: normal 15px "elektra_light_proregular", sans-serif;
+}
+
+/* .info-line */
+
+.info-line {
+	background: #41606d;
+	height: 41px;
+	width: 100%;
+	&__wrap {
+		margin: 0 auto;
+		position: relative;
+		width: 1000px;
+	}
+	&__social {
+		position: absolute;
+		top: 8px;
+		left: 0;
+	}
+	&__phone {
+		color: #fff;
+		font-size: 25px;
+		position: absolute;
+		top: 8px;
+		right: 0;
+		&-region {
+			font-size: 14px;
+			font-family: 'elektra_light_probold';
+			color: #00b9fe;
+			margin-right: 7px;
+		}
+	}
+	&__contacts {
+		background: url("../img/design/contacts_ico.png") no-repeat 0 center;
+		font-size: 13px;
+		width: 275px;
+		margin: 0 auto;
+		position: absolute;
+		top: 8px;
+		left: 50%;
+		margin-left: -123px;
+		padding: 4px 0 2px 26px;
+		&-link {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+}
+
+/* .social */
+
+.social {
+	&__item {
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		display: inline-block;
+		height: 25px;
+		width: 25px;
+		&_vk {
+			background-image: url("../img/design/vk_ico.png");
+		}
+		&_fb {
+			background-image: url("../img/design/fb_ico.png");
+		}
+		&_tw {
+			background-image: url("../img/design/tw_ico.png");
+		}
+	}
+	&__link {
+		display: block;
+		height: 100%;
+		width: 100%;
+	}
+}

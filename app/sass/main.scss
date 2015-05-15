@@ -10,29 +10,39 @@
 	visibility: hidden;
 }
 .wrapper {
-	outline: 1px solid red;
-	min-height: 200px;
+	position: relative;
 	margin: 0 auto;
+	min-height: 100%;
 	min-width: 1024px;
+	overflow: hidden;
+}
+.wrapper:after {
+	content: "";
+	height: 228px;
+	display: block;
 }
 
+html {
+	height: 100%;
+}
 body {
 	color: #5c7b98;
 	font: normal 15px "elektra_light_proregular", sans-serif;
+	height: 100%;
 }
 
 /* .info-line */
 
 .info-line {
 	background: #41606d;
-	height: 41px;
 	width: 100%;
 	&__wrap {
 		margin: 0 auto;
 		position: relative;
+		height: 41px;
 		width: 1000px;
 	}
-	&__social {
+	&__socials {
 		position: absolute;
 		top: 8px;
 		left: 0;
@@ -68,9 +78,9 @@ body {
 	}
 }
 
-/* .social */
+/* .socials */
 
-.social {
+.socials {
 	&__item {
 		background-repeat: no-repeat;
 		background-position: 0 0;
@@ -91,6 +101,21 @@ body {
 		display: block;
 		height: 100%;
 		width: 100%;
+	}
+	&_big {
+		& .socials__item {
+			height: 44px;
+			width: 44px;
+			&_vk {
+				background-image: url("../img/design/vk_ico_big.png");
+			}
+			&_fb {
+				background-image: url("../img/design/fb_ico_big.png");
+			}
+			&_tw {
+				background-image: url("../img/design/tw_ico_big.png");
+			}
+		}
 	}
 }
 
@@ -203,6 +228,7 @@ body {
 /* .logo */
 
 .logo {
+	overflow: hidden;
 	&__link {
 		display: inline-block;
 	}
@@ -251,7 +277,6 @@ body {
 		}
 	}
 }
-
 /* placeholder */
 *::-webkit-input-placeholder {
 	color: inherit;
@@ -267,4 +292,49 @@ body {
 *:-ms-input-placeholder {
 	/* IE 10+ */
 	color: inherit;
+}
+
+/* .footer */
+
+.footer {
+	background: url("../img/design/footer_bg.jpg") repeat 0 0;
+	height: 228px;
+	margin-top: -228px;
+	width: 100%;
+	&__wrap {
+		margin: 0 auto;
+		padding-top: 60px;
+		position: relative;
+		width: 1000px;
+	}
+	&__logo {
+		float: left;
+		padding-top: 39px;
+		width: 248px;
+	}
+	&__list {
+		list-style: none;
+		float: left;
+		width: 162px;
+		&-item {
+			color: #fff;
+			margin-bottom: 6px;
+		}
+		&-headline {
+			font-family: 'elektra-light-probold';
+		}
+		&-link {
+			color: #fff;
+		}
+	}
+	&__links {
+		float: right;
+		padding: 12px 12px 0 0;
+		&-app {
+			margin-bottom: 22px;
+			&-link {
+				display: inline-block;
+			}
+		}
+	}
 }

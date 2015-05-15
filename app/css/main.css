@@ -12,29 +12,41 @@
 }
 
 .wrapper {
-  outline: 1px solid red;
-  min-height: 200px;
+  position: relative;
   margin: 0 auto;
+  min-height: 100%;
   min-width: 1024px;
+  overflow: hidden;
+}
+
+.wrapper:after {
+  content: "";
+  height: 228px;
+  display: block;
+}
+
+html {
+  height: 100%;
 }
 
 body {
   color: #5c7b98;
   font: normal 15px "elektra_light_proregular", sans-serif;
+  height: 100%;
 }
 
 /* .info-line */
 .info-line {
   background: #41606d;
-  height: 41px;
   width: 100%;
 }
 .info-line__wrap {
   margin: 0 auto;
   position: relative;
+  height: 41px;
   width: 1000px;
 }
-.info-line__social {
+.info-line__socials {
   position: absolute;
   top: 8px;
   left: 0;
@@ -69,27 +81,40 @@ body {
   text-decoration: none;
 }
 
-/* .social */
-.social__item {
+/* .socials */
+.socials__item {
   background-repeat: no-repeat;
   background-position: 0 0;
   display: inline-block;
   height: 25px;
   width: 25px;
 }
-.social__item_vk {
+.socials__item_vk {
   background-image: url("../img/design/vk_ico.png");
 }
-.social__item_fb {
+.socials__item_fb {
   background-image: url("../img/design/fb_ico.png");
 }
-.social__item_tw {
+.socials__item_tw {
   background-image: url("../img/design/tw_ico.png");
 }
-.social__link {
+.socials__link {
   display: block;
   height: 100%;
   width: 100%;
+}
+.socials_big .socials__item {
+  height: 44px;
+  width: 44px;
+}
+.socials_big .socials__item_vk {
+  background-image: url("../img/design/vk_ico_big.png");
+}
+.socials_big .socials__item_fb {
+  background-image: url("../img/design/fb_ico_big.png");
+}
+.socials_big .socials__item_tw {
+  background-image: url("../img/design/tw_ico_big.png");
 }
 
 /* .header */
@@ -205,6 +230,9 @@ body {
 }
 
 /* .logo */
+.logo {
+  overflow: hidden;
+}
 .logo__link {
   display: inline-block;
 }
@@ -266,6 +294,50 @@ body {
 *:-ms-input-placeholder {
   /* IE 10+ */
   color: inherit;
+}
+
+/* .footer */
+.footer {
+  background: url("../img/design/footer_bg.jpg") repeat 0 0;
+  height: 228px;
+  margin-top: -228px;
+  width: 100%;
+}
+.footer__wrap {
+  margin: 0 auto;
+  padding-top: 60px;
+  position: relative;
+  width: 1000px;
+}
+.footer__logo {
+  float: left;
+  padding-top: 39px;
+  width: 248px;
+}
+.footer__list {
+  list-style: none;
+  float: left;
+  width: 162px;
+}
+.footer__list-item {
+  color: #fff;
+  margin-bottom: 6px;
+}
+.footer__list-headline {
+  font-family: 'elektra-light-probold';
+}
+.footer__list-link {
+  color: #fff;
+}
+.footer__links {
+  float: right;
+  padding: 12px 12px 0 0;
+}
+.footer__links-app {
+  margin-bottom: 22px;
+}
+.footer__links-app-link {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=main.css.map */

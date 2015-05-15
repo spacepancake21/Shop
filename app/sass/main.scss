@@ -13,7 +13,7 @@
 	outline: 1px solid red;
 	min-height: 200px;
 	margin: 0 auto;
-	min-width: 1000px;
+	min-width: 1024px;
 }
 
 body {
@@ -40,6 +40,7 @@ body {
 	&__phone {
 		color: #fff;
 		font-size: 25px;
+		text-decoration: none;
 		position: absolute;
 		top: 8px;
 		right: 0;
@@ -91,4 +92,179 @@ body {
 		height: 100%;
 		width: 100%;
 	}
+}
+
+/* .header */
+
+.header {
+	background: #d9e4ef;
+	&__wrap {
+		background: #d9e4ef; /* Old browsers */
+		background: -moz-linear-gradient(left,  #d9e4ef 0%, #dae4ef 0%, #f0f5f8 50%, #dae4ef 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,#d9e4ef), color-stop(0%,#dae4ef), color-stop(50%,#f0f5f8), color-stop(100%,#dae4ef)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(left,  #d9e4ef 0%,#dae4ef 0%,#f0f5f8 50%,#dae4ef 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(left,  #d9e4ef 0%,#dae4ef 0%,#f0f5f8 50%,#dae4ef 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(left,  #d9e4ef 0%,#dae4ef 0%,#f0f5f8 50%,#dae4ef 100%); /* IE10+ */
+		background: linear-gradient(to right,  #d9e4ef 0%,#dae4ef 0%,#f0f5f8 50%,#dae4ef 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9e4ef', endColorstr='#dae4ef',GradientType=1 ); /* IE6-9 */
+
+		height: 98px;
+		margin: 0 auto;
+		width: 1000px;
+	}
+	&__logo {
+		float: left;
+		padding-top: 24px;
+		width: 259px;
+	}
+	&__search {
+		padding-top: 34px;
+		float: left;
+	}
+	&__navi {
+		float: left;
+		list-style: none;
+		padding-top: 28px;
+		&-item {
+			border: 1px solid transparent;
+			border-bottom: none;
+			float: left;
+			padding: 12px 5px;
+			width: 122px;
+			text-align: center;
+			&_basket {
+				position: relative;
+				&:hover {
+					border-color: #dce6f0;
+					background: #fff;
+					& .header__navi-basket {
+						display: block;
+					}
+				}
+				& .header__navi-link {
+					background: url("../img/design/basket_ico.png") no-repeat 10px center;
+					display: block;
+					color: #5c7b98;
+					height: 100%;
+					padding-left: 35px;
+				}
+			}
+		}
+		&-link {
+			color: #00b9fe;
+			font-size: 13px;
+			&:hover {
+				color: #613993;
+			}
+		}
+		&-basket {
+			border: 1px solid #dce6f0;
+			border-bottom: none;
+			display: none;
+			list-style: none;
+			position: absolute;
+			top: 40px;
+			left: -113px;
+			width: 244px;
+			&-item {
+				border-bottom: 1px solid #dce6f0;
+				background: #fff;
+				height: 75px;
+				&:hover {
+					background: #f8fafb;
+				}
+			}
+			&-img {
+				max-width: 100%;
+				&-wrap {
+					display: table-cell;
+					vertical-align: middle;
+					height: 75px;
+					width: 84px;
+					text-align: center;
+					overflow: hidden;
+				}
+			}
+			&-link {
+				font-size: 13px;
+				color: #00b9fe;
+				&-wrap {
+					display: table-cell;
+					width: 160px;
+					height: 75px;
+					vertical-align: middle;
+					text-align: left;
+				}
+			}
+		}
+	}
+}
+
+/* .logo */
+
+.logo {
+	&__link {
+		display: inline-block;
+	}
+	&__img {
+		max-width: 100%;
+	}
+	&__text {
+		display: none;
+	}
+}
+
+/* .form */
+
+.form {
+	&__input {
+		border: none;
+		background: #fff;
+		color: #dce6f0;
+		display: inline-block;
+		height: 35px;
+		&:focus {
+			outline: none;
+		}
+		&_text {
+			border: 1px solid #dce6f0;
+			height: 33px;
+			padding: 0 10px;
+		}
+		&_submit {
+			font-family: 'elektra_light_probold';
+			font-size: 17px;
+			background: #00b9fe;
+			color: #fff;
+		}
+	}
+	&__search {
+		.form__input {
+			float: left;
+			&_text {
+				width: 238px;
+				border-right: none;
+			}
+			&_submit {
+				padding: 0 17px;
+			}
+		}
+	}
+}
+
+/* placeholder */
+*::-webkit-input-placeholder {
+	color: inherit;
+}
+*:-moz-placeholder {
+	/* FF 4-18 */
+	color: inherit;
+}
+*::-moz-placeholder {
+	/* FF 19+ */
+	color: inherit;
+}
+*:-ms-input-placeholder {
+	/* IE 10+ */
+	color: inherit;
 }

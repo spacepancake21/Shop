@@ -1,0 +1,36 @@
+.header
+  .header__wrap.clearfix
+    .header__logo
+      .logo
+        a(href="/").logo__link
+          img(src="img/design/logo.png", alt="Logo").logo__img
+          p.logo__text AppleShop
+    .header__search
+      form.form
+        .form__search.clearfix
+          input(type="text", placeholder="iMac 27 дюймов").form__input.form__input_text
+          input(type="submit", value="Поиск").form__input.form__input_submit
+    ul.header__navi.clearfix
+      li.header__navi-item
+        a(href="#").header__navi-link Карта проезда
+      li.header__navi-item
+        a(href="#").header__navi-link История заказов
+      li.header__navi-item.header__navi-item_basket
+        a(href="#").header__navi-link Корзина (3)
+        ul.header__navi-basket
+          li.header__navi-basket-item
+            .header__navi-basket-img-wrap
+              img(src="img/design/iphone_6.jpg", alt="iPhone 6").header__navi-basket-img
+            .header__navi-basket-link-wrap
+              a(href="#").header__navi-basket-link iPhone 6
+          li.header__navi-basket-item
+            .header__navi-basket-img-wrap
+              img(src="img/design/ipad_air.jpg", alt="iPad Air Wi-Fi + Cellular 128GB - Silver").header__navi-basket-img
+            .header__navi-basket-link-wrap
+              a(href="#").header__navi-basket-link iPad Air Wi-Fi + Cellular 128GB - Silver
+          li.header__navi-basket-item
+            .header__navi-basket-img-wrap
+              img(src="img/design/macbook_air.jpg", alt="Macbook Air").header__navi-basket-img
+            .header__navi-basket-link-wrap
+              a(href="#").header__navi-basket-link Macbook Air
+// END .header

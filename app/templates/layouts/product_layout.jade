@@ -10,6 +10,16 @@ html(lang="ru-RU")
       include ../common/header.jade
       include ../common/menu.jade
 
+      .main
+
+        ul.b-crumbs
+          li.b-crumbs__item
+            a(href="#").b-crumbs__link Главная
+          li.b-crumbs__item
+            a(href="#").b-crumbs__link Каталог
+          li.b-crumbs__item
+            a(href="#").b-crumbs__link iPad Air Wi-Fi + Cellular 128GB - Silver
+
       block content
 
     include ../common/footer.jade

@@ -154,7 +154,7 @@ body {
 			border: 1px solid transparent;
 			border-bottom: none;
 			float: left;
-			padding: 12px 5px;
+			padding: 13px 5px;
 			width: 122px;
 			text-align: center;
 			&_basket {
@@ -188,13 +188,16 @@ body {
 			display: none;
 			list-style: none;
 			position: absolute;
-			top: 40px;
+			top: 41px;
 			left: -113px;
 			width: 244px;
+			z-index: 50;
+			zoom: 1;
 			&-item {
 				border-bottom: 1px solid #dce6f0;
 				background: #fff;
 				height: 75px;
+				position: relative;
 				&:hover {
 					background: #f8fafb;
 				}
@@ -254,8 +257,8 @@ body {
 		}
 		&_text {
 			border: 1px solid #dce6f0;
-			height: 33px;
-			padding: 0 10px;
+			height: 19px;
+			padding: 7px 10px;
 		}
 		&_submit {
 			font-family: 'elektra_light_probold';
@@ -272,7 +275,7 @@ body {
 				border-right: none;
 			}
 			&_submit {
-				padding: 0 17px;
+				padding: 0 15px;
 			}
 		}
 	}
@@ -292,6 +295,134 @@ body {
 *:-ms-input-placeholder {
 	/* IE 10+ */
 	color: inherit;
+}
+
+/* .menu */
+
+.menu {
+	background: #f7f7f7;
+	border-bottom: 1px solid #e3e3e3;
+	&__list {
+		list-style: none;
+		margin: 0 auto;
+		width: 1000px;
+	}
+	&__item {
+		float: left;
+		position: relative;
+		margin: 0 16px 0 0;
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+		&:after {
+			content: "";
+			display: block;
+			height: 40px;
+			width: 16px;
+			background: url("../img/design/menu_arrows_sprite.png") no-repeat 0 0;
+			position: absolute;
+			top: 0;
+			right: -16px;
+		}
+		&_active {
+			margin-left: -15px;
+			padding: 0 0 0 16px;
+			&:before {
+				content: "";
+				display: block;
+				height: 40px;
+				width: 16px;
+				background: url("../img/design/menu_arrows_sprite.png") no-repeat -21px -45px;
+				position: absolute;
+				top: 0;
+				left: 0px;
+			}
+			&:after {
+				content: "";
+				display: block;
+				height: 40px;
+				width: 16px;
+				background: url("../img/design/menu_arrows_sprite.png") no-repeat -43px -45px;
+				position: absolute;
+				top: 0;
+				right: -16px;
+			}
+			& .menu__link {
+				background: #00b9fe;
+				color: #fff;
+			}
+		}
+		&:hover:not(.menu__item_active) {
+			background: #dce6f0;
+			&:before {
+				content: "";
+				display: block;
+				height: 40px;
+				width: 16px;
+				background: url("../img/design/menu_arrows_sprite.png") no-repeat -20px 0;
+				position: absolute;
+				top: 0;
+				left: -16px;
+			}
+			&:after {
+				content: "";
+				display: block;
+				height: 40px;
+				width: 16px;
+				background: url("../img/design/menu_arrows_sprite.png") no-repeat -43px 0;
+				position: absolute;
+				top: 0;
+				right: -16px;
+			}
+		}
+	}
+	&__link {
+		color: #5c7b98;
+		display: block;
+		text-decoration: none;
+		line-height: 40px;
+		padding: 0 11px;
+	}
+}
+
+/* .main */
+
+.main {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+/* .pagi */
+
+.b-crumbs {
+	list-style: none;
+	padding: 20px 0;
+	&__item {
+		font-size: 14px;
+		display: inline-block;
+		&:after {
+			content: "";
+			background: url("../img/design/b_crubms_arrow.png") no-repeat 0 center;
+			display: inline-block;
+			margin: 0 4px;
+			height: 7px;
+			width: 6px;
+		}
+		&:last-child {
+			&:after {
+				display: none;
+			}
+			& .b-crumbs__link {
+				color: #5c7b98;
+				text-decoration: none;
+			}
+		}
+	}
+	&__link {
+		color: #00b9fe;
+	}
 }
 
 /* .footer */

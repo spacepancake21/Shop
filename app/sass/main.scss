@@ -522,6 +522,9 @@ body {
 		margin-bottom: 15px;
 		overflow: hidden;
 	}
+	&__full-img {
+		max-width: 100%;
+	}
 	&__img {
 		max-width: 100%;
 	}
@@ -536,16 +539,17 @@ body {
 		list-style: none;
 		position: relative;
 		left: 0;
+		width: 1000px;
 	}
 	&__item {
 		cursor: pointer;
 		float: left;
 		height: 75px;
-		margin-left: 10px;
+		margin-right: 10px;
 		overflow: hidden;
 		width: 75px;
-		&:first-child {
-			margin-left: 0;
+		&:last-child {
+			margin-right: 0;
 		}
 	}
 	&__btn {

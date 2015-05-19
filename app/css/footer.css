@@ -1,0 +1,45 @@
+/* .footer */
+.footer {
+  background: url("../img/design/footer_bg.jpg") repeat 0 0;
+  height: 228px;
+  margin-top: -228px;
+  width: 100%;
+}
+.footer__wrap {
+  margin: 0 auto;
+  padding-top: 60px;
+  position: relative;
+  width: 1000px;
+}
+.footer__logo {
+  float: left;
+  padding-top: 39px;
+  width: 248px;
+}
+.footer__list {
+  list-style: none;
+  float: left;
+  width: 162px;
+}
+.footer__list-item {
+  color: #fff;
+  margin-bottom: 6px;
+}
+.footer__list-item__headline {
+  font-family: 'elektra_light_probold';
+}
+.footer__list-link {
+  color: #fff;
+}
+.footer__links {
+  float: right;
+  padding: 12px 12px 0 0;
+}
+.footer__links-app {
+  margin-bottom: 22px;
+}
+.footer__links-app-link {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=footer.css.map */

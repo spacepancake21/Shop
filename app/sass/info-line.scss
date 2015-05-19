@@ -1,0 +1,46 @@
+/* .info-line */
+
+.info-line {
+	background: #41606d;
+	width: 100%;
+	&__wrap {
+		margin: 0 auto;
+		position: relative;
+		height: 41px;
+		width: 1000px;
+	}
+	&__socials {
+		position: absolute;
+		top: 8px;
+		left: 0;
+	}
+	&__phone {
+		color: #fff;
+		font-size: 25px;
+		text-decoration: none;
+		position: absolute;
+		top: 8px;
+		right: 0;
+		&-region {
+			font-size: 14px;
+			font-family: 'elektra_light_probold';
+			color: #00b9fe;
+			margin-right: 7px;
+		}
+	}
+	&__contacts {
+		background: url("../img/design/contacts_ico.png") no-repeat 0 center;
+		font-size: 13px;
+		width: 275px;
+		margin: 0 auto;
+		position: absolute;
+		top: 8px;
+		left: 50%;
+		margin-left: -123px;
+		padding: 4px 0 2px 26px;
+		&-link {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+}

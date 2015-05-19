@@ -1,0 +1,54 @@
+/* product-page */
+
+.product-info {
+	margin-bottom: 45px;
+	&__carousel {
+		float: left;
+		margin-right: 28px;
+		width: 298px;
+	}
+	&__main {
+		float: left;
+		width: 450px;
+	}
+	&__headline {
+		color: #00b9fe;
+		font-size: 25px;
+		font-family: 'elektra_light_probold';
+		margin-bottom: 20px;
+	}
+	&__line {
+		padding: 6px 11px 5px 11px;
+		&:nth-child(even) {
+			background: #eef2f4;
+		}
+	}
+	&__col {
+		&_left {
+			float: left;
+			width: 163px;
+		}
+		&_right {
+			float: right;
+			width: 182px;
+		}
+	}
+}
+
+.shop-desc {
+	margin-bottom: 15px;
+	&__headline {
+		font-family: 'elektra_light_probold';
+		font-size: 25px;
+		margin-bottom: 5px;
+	}
+	&__col {
+		float: left;
+		width: 295px;
+		margin-left: 50px;
+		line-height: 20px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}

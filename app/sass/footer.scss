@@ -1,0 +1,44 @@
+/* .footer */
+
+.footer {
+	background: url("../img/design/footer_bg.jpg") repeat 0 0;
+	height: 228px;
+	margin-top: -228px;
+	width: 100%;
+	&__wrap {
+		margin: 0 auto;
+		padding-top: 60px;
+		position: relative;
+		width: 1000px;
+	}
+	&__logo {
+		float: left;
+		padding-top: 39px;
+		width: 248px;
+	}
+	&__list {
+		list-style: none;
+		float: left;
+		width: 162px;
+		&-item {
+			color: #fff;
+			margin-bottom: 6px;
+			&__headline {
+				font-family: 'elektra_light_probold';
+			}
+		}
+		&-link {
+			color: #fff;
+		}
+	}
+	&__links {
+		float: right;
+		padding: 12px 12px 0 0;
+		&-app {
+			margin-bottom: 22px;
+			&-link {
+				display: inline-block;
+			}
+		}
+	}
+}

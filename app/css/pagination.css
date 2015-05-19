@@ -1,0 +1,29 @@
+/* .pagi */
+.b-crumbs {
+  list-style: none;
+  padding: 20px 0;
+}
+.b-crumbs__item {
+  font-size: 14px;
+  display: inline-block;
+}
+.b-crumbs__item:after {
+  content: "";
+  background: url("../img/design/b_crubms_arrow.png") no-repeat 0 center;
+  display: inline-block;
+  margin: 0 4px;
+  height: 7px;
+  width: 6px;
+}
+.b-crumbs__item:last-child:after {
+  display: none;
+}
+.b-crumbs__item:last-child .b-crumbs__link {
+  color: #5c7b98;
+  text-decoration: none;
+}
+.b-crumbs__link {
+  color: #00b9fe;
+}
+
+/*# sourceMappingURL=pagination.css.map */

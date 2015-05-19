@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "carousel.js",
+  "sourceRoot": "",
+  "sources": [
+    "carousel.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;;AAAA"
+}
